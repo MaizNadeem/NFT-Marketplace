@@ -32,10 +32,10 @@ const NFTCard = ({ data }) => {
       <SubInfo />
       <View style={{ width: '100%', padding: SIZES.font }}>
         <NFTTitle 
-        title={data.name}
-        subTitle={data.creator}
-        titleSize={SIZES.large}
-        subTitleSize={SIZES.small}
+          title={data.name}
+          subTitle={data.creator}
+          titleSize={SIZES.large}
+          subTitleSize={SIZES.small}
         />
         <View style={{
           marginTop: SIZES.font,
