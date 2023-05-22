@@ -9,13 +9,15 @@ import { getDatabase, ref, onValue } from "firebase/database"
 
 const Home = () => {
 
+  const nftData = null;
   const [firebaseNFTData, setFirebaseNFTData] = useState();
 
   useEffect(() => {
     const db = getDatabase(app)
     const dbRef = ref(db, 'NFTData')
     onValue(dbRef, (snapshot) => {
-      setFirebaseNFTData(snapshot.val());
+      nftData = snapshot.val()
+      setFirebaseNFTData(nftData);
     })
   }, [])
   
@@ -27,7 +29,7 @@ const Home = () => {
     if (filteredData.length){
       setNtfData(filteredData)
     } else {
-      setNtfData(firebaseNFTData)
+      setNtfData(nftData)
     }
   }
 
