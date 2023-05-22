@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "NFT-Marketplace",
-    "slug": "NFT-Marketplace",
+    "slug": "nft-marketplace",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.maiznadeem.nftmarketplace"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fed13ade-7fdc-4a51-adbb-dc4b09b75be9"
+      }
+    },
+    "owner": "maiz-nadeem"
   }
 }
