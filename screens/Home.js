@@ -9,20 +9,16 @@ import { getDatabase, ref, onValue } from "firebase/database"
 
 const Home = () => {
 
+  const nftData = null;
   const [firebaseNFTData, setFirebaseNFTData] = useState();
-  const [ntfData, setNtfData] = useState(NFTData)
 
   useEffect(() => {
-
     const db = getDatabase(app)
     const dbRef = ref(db, 'NFTData')
     onValue(dbRef, (snapshot) => {
-      let data = snapshot.val()
-      setFirebaseNFTData(data);
-      console.log(`Data retrieved from firebase:`)
-      console.log(data[0])
+      nftData = snapshot.val()
+      setFirebaseNFTData(nftData);
     })
-
   }, [])
   
   const handleSearch = (value) => {
@@ -33,7 +29,7 @@ const Home = () => {
     if (filteredData.length){
       setNtfData(filteredData)
     } else {
-      setNtfData(firebaseNFTData)
+      setNtfData(nftData)
     }
   }
 
@@ -43,7 +39,7 @@ const Home = () => {
       <View style={{ flex: 1 }}>
         <View style={{ zIndex: 0 }}>
           <FlatList
-            data={ntfData}
+            data={firebaseNFTData}
             renderItem={({ item }) => <NFTCard data={item} />}
             keyExtractor={(item) => item.id}
             showsVerticalScrollIndicator={false}

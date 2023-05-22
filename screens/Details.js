@@ -7,7 +7,7 @@ import { Rect } from 'react-native-svg';
 const DetailsHeader = ({data, navigation}) => (
   <View style={{ width: '100%', height: 373 }}>
     <Image 
-      source={data.image}
+      source={{uri: data.image}}
       resizeMode='cover'
       style={{ width: '100%', height: '100%' }}
     />
@@ -58,12 +58,12 @@ const Details = ({ route, navigation }) => {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{paddingBottom: SIZES.extraLarge*3}}
         ListHeaderComponent={() => (
-          <React.Fragment>
+          <>
             <DetailsHeader data={data} navigation={navigation}/>
             <SubInfo />
             <View style={{ padding: SIZES.font }}>
               <DetailsDesc data={data}/>
-              {data.bids.length > 0 && (
+              {data.bids != null && (
                 <Text style={{
                   fontSize: SIZES.font,
                   fontFamily: FONTS.semiBold,
@@ -71,7 +71,7 @@ const Details = ({ route, navigation }) => {
                 }}>Current Bids</Text>
               )}
             </View>
-          </React.Fragment>
+          </>
         )}
       />
     </SafeAreaView>
