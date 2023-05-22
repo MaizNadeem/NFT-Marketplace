@@ -10,19 +10,13 @@ import { getDatabase, ref, onValue } from "firebase/database"
 const Home = () => {
 
   const [firebaseNFTData, setFirebaseNFTData] = useState();
-  const [ntfData, setNtfData] = useState(NFTData)
 
   useEffect(() => {
-
     const db = getDatabase(app)
     const dbRef = ref(db, 'NFTData')
     onValue(dbRef, (snapshot) => {
-      let data = snapshot.val()
-      setFirebaseNFTData(data);
-      console.log(`Data retrieved from firebase:`)
-      console.log(data[0])
+      setFirebaseNFTData(snapshot.val());
     })
-
   }, [])
   
   const handleSearch = (value) => {
@@ -43,7 +37,7 @@ const Home = () => {
       <View style={{ flex: 1 }}>
         <View style={{ zIndex: 0 }}>
           <FlatList
-            data={ntfData}
+            data={firebaseNFTData}
             renderItem={({ item }) => <NFTCard data={item} />}
             keyExtractor={(item) => item.id}
             showsVerticalScrollIndicator={false}

@@ -38,7 +38,7 @@ export const EthPrice = ({ price }) => {
 export const ImageCmp = ({ imgUrl, index }) => {
     return (
         <Image 
-        source={imgUrl}
+        source={{uri: imgUrl}}
         resizeMode='contain'
         style={{
             width: 48,
@@ -50,11 +50,18 @@ export const ImageCmp = ({ imgUrl, index }) => {
 }
 
 export const People = () => {
+
+    const images = [
+        assets.person02,
+        assets.person03,
+        assets.person04
+    ]
+
     return (
         <View style={{ flexDirection: 'row' }}>
-            {[ assets.person02, assets.person03, assets.person04 ].map((imgUrl, index) => (
+            { images.map((imgUrl, index) => (
                 <ImageCmp imgUrl={imgUrl} index={index} key={`People-${index}`}/>
-            ))}
+            )) }
         </View>
     )
 }
