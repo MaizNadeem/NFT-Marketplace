@@ -13,12 +13,12 @@ This repository contains the source code for a modern NFT Marketplace app built 
 
 ## Screenshots
 
-[Home Page](https://github.com/MaizNadeem/NFT-Marketplace/blob/firebase/images/Image%201.jpg)
-[Details Page](https://github.com/MaizNadeem/NFT-Marketplace/blob/firebase/images/Image%202.jpg)
+- [Home Page](https://github.com/MaizNadeem/NFT-Marketplace/blob/firebase/images/Image%201.jpg)
+- [Details Page](https://github.com/MaizNadeem/NFT-Marketplace/blob/firebase/images/Image%202.jpg)
 
 ## Download
 
-You can download the android build from here: [NFT MArketplace]()
+You can download the android build from here: [NFT Marketplace App (apk)]()
 
 ## Installation
 
