@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ExpoProject",
-    "slug": "ExpoProject",
+    "name": "NFT-Marketplace",
+    "slug": "NFT-Marketplace",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
