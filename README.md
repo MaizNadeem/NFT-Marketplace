@@ -13,8 +13,8 @@ This repository contains the source code for a modern NFT Marketplace app built 
 
 ## Screenshots
 
-![Image](https://github.com/MaizNadeem/NFT-Marketplace/blob/firebase/images/Image%201.jpg){: width="50%" height="50%"}
-![Image](https://github.com/MaizNadeem/NFT-Marketplace/blob/firebase/images/Image%202.jpg){: width="50%" height="50%"}
+![Image](https://github.com/MaizNadeem/NFT-Marketplace/blob/firebase/images/Image%201.jpg){: width="270" height="2400"}
+![Image](https://github.com/MaizNadeem/NFT-Marketplace/blob/firebase/images/Image%202.jpg){: width="270" height="2400"}
 
 ## Installation
 
