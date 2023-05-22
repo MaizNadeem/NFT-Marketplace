@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { View, SafeAreaView, FlatList } from 'react-native';
 
-import { COLORS, NFTData } from '../constants'
+import { COLORS } from '../constants'
 import { HomeHeader, FocusedStatusBar, NFTCard } from '../components';
 
 import app from '../database/firebase'
@@ -9,27 +9,27 @@ import { getDatabase, ref, onValue } from "firebase/database"
 
 const Home = () => {
 
-  const nftData = null;
-  const [firebaseNFTData, setFirebaseNFTData] = useState();
+  const [nftData, setNftData] = useState()
+  const [firebaseNFTData, setFirebaseNFTData] = useState()
 
   useEffect(() => {
     const db = getDatabase(app)
     const dbRef = ref(db, 'NFTData')
     onValue(dbRef, (snapshot) => {
-      nftData = snapshot.val()
-      setFirebaseNFTData(nftData);
+      setNftData(snapshot.val())
+      setFirebaseNFTData(snapshot.val())
     })
   }, [])
   
   const handleSearch = (value) => {
-    if (!value.length) return setNtfData(firebaseNFTData)
+    if (!value.length) return setFirebaseNFTData(nftData)
     const filteredData = firebaseNFTData.filter((item) => 
       item.name.toLowerCase().includes(value.toLowerCase())
     )
     if (filteredData.length){
-      setNtfData(filteredData)
+      setFirebaseNFTData(filteredData)
     } else {
-      setNtfData(nftData)
+      setFirebaseNFTData(nftData)
     }
   }
 
