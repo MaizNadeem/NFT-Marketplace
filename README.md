@@ -1,6 +1,6 @@
-# Modern NFT Marketplace App
-
 ![Banner Image](https://github.com/MaizNadeem/NFT-Marketplace/blob/firebase/images/Banner.png)
+
+# Modern NFT Marketplace App
 
 This repository contains the source code for a modern NFT Marketplace app built using React Native. The app allows users to explore and trade various digital assets as non-fungible tokens (NFTs).
 
@@ -13,16 +13,18 @@ This repository contains the source code for a modern NFT Marketplace app built 
 
 ## Screenshots
 
-- [Home Page](https://github.com/MaizNadeem/NFT-Marketplace/blob/firebase/images/Image%201.jpg)
-- [Details Page](https://github.com/MaizNadeem/NFT-Marketplace/blob/firebase/images/Image%202.jpg)
+<div align="center">
+  <img src="https://github.com/MaizNadeem/NFT-Marketplace/blob/firebase/images/Image%201.jpg" alt="Home Page" width="200px" style="margin-right: 20px" />
+  <img src="https://github.com/MaizNadeem/NFT-Marketplace/blob/firebase/images/Image%202.jpg" alt="Details Page" width="200px" />
+</div>
 
 ## Download
 
-You can download the android build from here: [NFT Marketplace App (apk)]()
+You can download the Android build of the app from here: [NFT Marketplace App (apk)]()
 
-## Installation
+## Deployment
 
-Follow the steps below to run the app locally:
+Follow the steps below to run the app locally on your own device:
 
 1. Clone this repository.
 2. Install the required dependencies using `npm install` or `yarn install`.
@@ -36,11 +38,6 @@ Follow the steps below to run the app locally:
 
 ## Contributing
 
-Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
-
-## License
+Contributions are welcomed! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
 
 <h4 align="center"> © M. Maiz Nadeem </h4>
-
----
-
