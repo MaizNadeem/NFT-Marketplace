@@ -1,4 +1,4 @@
-![Banner Image](https://github.com/MaizNadeem/NFT-Marketplace/blob/firebase/images/Banner.png)
+![Banner Image](https://github.com/MaizNadeem/NFT-Marketplace/blob/firebase/images/AppBanner.png)
 
 # Modern NFT Marketplace App
 
